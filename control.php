@@ -56,7 +56,7 @@
 
 			<!-- Rounded switch -->
 			<div class="row">
-				<div class="col-md-2 col-8 ml-auto">
+				<div class="col-md-4 col-8 ml-auto">
 					<label class="toggle-label">Head-Lights</label>
 				</div>
 				<div class="col-md-1 col-4 mr-auto">
@@ -66,9 +66,19 @@
 					</label>
 				</div>
 			</div>
+      <div class="row">
+        <div class="col-md-5 ml-auto mr-auto">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <span id="headlight_alert"></span>
+          </div>
+        </div>
+      </div>
 
 			<div class="row">
-				<div class="col-md-2 col-8 ml-auto">
+				<div class="col-md-4 col-8 ml-auto">
 					<label class="toggle-label">Door1 Lock</label>
 				</div>
 				<div class="col-md-1 col-4 mr-auto">
@@ -80,7 +90,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-2 col-8 ml-auto">
+				<div class="col-md-4 col-8 ml-auto">
 					<label class="toggle-label">Door2 Lock</label>
 				</div>
 				<div class="col-md-1 col-4 mr-auto">
@@ -92,7 +102,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-2 col-8 ml-auto">
+				<div class="col-md-4 col-8 ml-auto">
 					<label class="toggle-label">Door3 Lock</label>
 				</div>
 				<div class="col-md-1 col-4 mr-auto">
@@ -104,7 +114,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-2 col-8 ml-auto">
+				<div class="col-md-4 col-8 ml-auto">
 					<label class="toggle-label">Door4 Lock</label>
 				</div>
 				<div class="col-md-1 col-4 mr-auto">
