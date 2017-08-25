@@ -26,7 +26,7 @@
 	<title>Welcome</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
 		<a class="navbar-brand" href="#page-top">Control Panel</span></a>
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			Menu
@@ -56,10 +56,10 @@
 
 			<!-- Rounded switch -->
 			<div class="row">
-				<div class="col-md-4 col-8 ml-auto">
+				<div class="col-md-4 col-9 ml-auto">
 					<label class="toggle-label">Head-Lights</label>
 				</div>
-				<div class="col-md-1 col-4 mr-auto">
+				<div class="col-md-1 col-3 mr-auto">
 					<label class="switch">
 						<input type="checkbox" onclick="headlightAjax()" id="headlight">
 						<span class="slider round"></span>
@@ -75,13 +75,13 @@
             <span id="headlight_alert"></span>
           </div>
         </div>
-      </div>
+      </div><hr/>
 
 			<div class="row">
-				<div class="col-md-4 col-8 ml-auto">
+				<div class="col-md-4 col-9 ml-auto">
 					<label class="toggle-label">Door1 Lock</label>
 				</div>
-				<div class="col-md-1 col-4 mr-auto">
+				<div class="col-md-1 col-3 mr-auto">
 					<label class="switch">
 						<input type="checkbox" onclick="doorAjax(1)" id="door1">
 						<span class="slider round"></span>
@@ -90,10 +90,10 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 col-8 ml-auto">
+				<div class="col-md-4 col-9 ml-auto">
 					<label class="toggle-label">Door2 Lock</label>
 				</div>
-				<div class="col-md-1 col-4 mr-auto">
+				<div class="col-md-1 col-3 mr-auto">
 					<label class="switch">
 						<input type="checkbox" onclick="doorAjax(2)" id="door2">
 						<span class="slider round"></span>
@@ -102,10 +102,10 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 col-8 ml-auto">
+				<div class="col-md-4 col-9 ml-auto">
 					<label class="toggle-label">Door3 Lock</label>
 				</div>
-				<div class="col-md-1 col-4 mr-auto">
+				<div class="col-md-1 col-3 mr-auto">
 					<label class="switch">
 						<input type="checkbox" onclick="doorAjax(3)" id="door3">
 						<span class="slider round"></span>
@@ -114,16 +114,17 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 col-8 ml-auto">
+				<div class="col-md-4 col-9 ml-auto">
 					<label class="toggle-label">Door4 Lock</label>
 				</div>
-				<div class="col-md-1 col-4 mr-auto">
+				<div class="col-md-1 col-3 mr-auto">
 					<label class="switch">
 						<input type="checkbox" onclick="doorAjax(4)" id="door4">
 						<span class="slider round"></span>
 					</label>
 				</div>
 			</div>
+      <hr/>
 		</div>
   </section>
 
