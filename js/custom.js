@@ -12,7 +12,7 @@ function headlightAjax() {
       data:{action:'TURN_ON_HEADLIGHT'},
       success:function(data) {
         // alert(data);
-        if(data == "Something went wrong!") {
+        if(data.trim() == "Something went wrong!") {
           $("#headlight_alert").parent('div').removeClass("alert-success").addClass("alert-danger");
         }
         $('#headlight_alert').parent('div').show();
@@ -26,7 +26,7 @@ function headlightAjax() {
         data:{action:'TURN_OFF_HEADLIGHT'},
         success:function(data) {
           // alert(data);
-          if(data == "Something went wrong!") {
+          if(data.trim() == "Something went wrong!") {
             $("#headlight_alert").parent('div').removeClass("alert-success").addClass("alert-danger");
           }
           $('#headlight_alert').parent('div').show();
