@@ -16,8 +16,20 @@ console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "availabl
 				outputEl.innerHTML	= '<b>Result:</b> '
 					+ ' dx:'+joystick.deltaX()
 					+ ' dy:'+joystick.deltaY()
-					+ (joystick.right()	? ' right'	: '')
+					+ (joystick.right())
 					+ (joystick.up()	? ' up'		: '')
 					+ (joystick.left()	? ' left'	: '')
 					+ (joystick.down()	? ' down' 	: '')
+
+        // ajax
+        $.ajax({
+          type: "GET",
+          url: './php/joystickAjax.php',
+          data:{top:joystick.top(), right:joystick.right(), down:joystick.down(), left:joystick.left()},
+          success:function(data) {
+            // alert(data);
+            // do nothing
+            // for debug uncomment alert or use innerHTML
+          }
+        });
 			}, 1/30 * 1000);
