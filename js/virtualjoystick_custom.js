@@ -16,10 +16,10 @@ console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "availabl
 				outputEl.innerHTML	= '<b>Result:</b> '
 					+ ' dx:'+joystick.deltaX()
 					+ ' dy:'+joystick.deltaY()
-					+ (joystick.right())
-					+ (joystick.up()	? ' up'		: '')
+					+ (joystick.right() ? ' right': '')
+					+ (joystick.up()	  ? ' up'		: '')
 					+ (joystick.left()	? ' left'	: '')
-					+ (joystick.down()	? ' down' 	: '')
+					+ (joystick.down()	? ' down' : '')
 
         // ajax
         $.ajax({
