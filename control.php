@@ -34,8 +34,13 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<form class="form-inline my-2 my-lg-0" action="./php/login_session_destroy.php" method="POST">
+        <li class="nav-item">
+          <form class="form-inline col-2 my-lg-0" action="./joystick.php" method="POST">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">JoyStick</button>
+			    </form>
+				</li>
+        <li class="nav-item">
+          <form class="form-inline col-2 my-lg-0" action="./php/login_session_destroy.php" method="POST">
 			      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
 			    </form>
 				</li>
@@ -133,7 +138,7 @@
 	<script src="vendor/popper/popper.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Custom scripts for this template -->
+  <!-- Custom scripts for this template -->
 	<script src="js/custom.js"></script>
 
 </body>
