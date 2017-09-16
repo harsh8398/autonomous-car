@@ -35,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <span class="my-2 my-sm-2" id="joy_coords"></span>
+          <span class="col-2 my-lg-0" id="joy_coords"></span>
 				</li>
         <li class="nav-item">
           <form class="form-inline col-2 my-lg-0" action="./control.php" method="POST">
@@ -50,6 +50,13 @@
 			</ul>
 		</div>
 	</nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12" id="joy_container">
+        <i><p>JoyStick Playground (touch or click here to start joystick controller)</p></i>
+      </div>
+    </div>
+  </div>
   <!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/popper/popper.min.js"></script>
@@ -65,7 +72,12 @@
 </body>
 </html>
 <?php
-	} else {
+    // set pin modes
+    $setmode3 = shell_exec("/usr/local/bin/gpio mode 8 out");
+    $setmode5 = shell_exec("/usr/local/bin/gpio mode 9 out");
+    $setmode7 = shell_exec("/usr/local/bin/gpio mode 7 out");
+    $setmode11 = shell_exec("/usr/local/bin/gpio mode 0 out");
+  } else {
 		header("Location: ./index.html");
 	  exit;
 	}

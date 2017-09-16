@@ -250,3 +250,12 @@ body {
   color: #1194f4;
   background-color: #e3f2fd;
 }
+
+/* joystick settings */
+#joy_container {
+    padding:0px;
+    min-height: 500px;
+		height: 100%;
+		background-color: #ccc;
+    position:absolute;
+}
